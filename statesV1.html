@@ -1,0 +1,276 @@
+<!-- ============================================================
+     FEE GIKI — Stats Section
+     Paste this block inside index.html where you want the
+     stats to appear (recommended: after the hero/banner section)
+     ============================================================ -->
+
+<section class="fee-stats-section" id="fee-stats">
+  <style>
+    /* ── FEE Stats Section ── */
+    .fee-stats-section {
+      padding: 60px 0 50px;
+      background: #ffffff;
+      border-top: 1px solid #e8e8e8;
+      border-bottom: 1px solid #e8e8e8;
+    }
+    .fee-stats-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 30px;
+    }
+    .fee-stats-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .fee-stats-header h2 {
+      font-size: 28px;
+      font-weight: 600;
+      color: #19204c;
+      margin: 0 0 8px;
+    }
+    .fee-stats-header p {
+      font-size: 15px;
+      color: #666;
+      margin: 0;
+    }
+    /* Top row — 5 big cards */
+    .fee-stats-grid {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+    .fee-stat-card {
+      background: #f7f8fc;
+      border: 1px solid #e4e6f0;
+      border-radius: 10px;
+      padding: 28px 16px 22px;
+      text-align: center;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+    .fee-stat-card:hover {
+      border-color: #19204c;
+      transform: translateY(-2px);
+    }
+    .fee-stat-icon {
+      font-size: 28px;
+      color: #19204c;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .fee-stat-number {
+      font-size: 36px;
+      font-weight: 700;
+      color: #19204c;
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+    .fee-stat-label {
+      font-size: 13px;
+      color: #444;
+      font-weight: 500;
+      line-height: 1.4;
+    }
+    .fee-stat-sub {
+      font-size: 11px;
+      color: #888;
+      margin-top: 4px;
+    }
+    /* Bottom row — 4 inline stats */
+    .fee-stats-row2 {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .fee-inline-stat {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background: #f0f2fa;
+      border-radius: 10px;
+      padding: 18px 20px;
+    }
+    .fee-inline-icon {
+      font-size: 22px;
+      color: #19204c;
+      flex-shrink: 0;
+    }
+    .fee-inline-number {
+      font-size: 20px;
+      font-weight: 700;
+      color: #19204c;
+      line-height: 1;
+    }
+    .fee-inline-label {
+      font-size: 12px;
+      color: #555;
+      margin-top: 3px;
+    }
+    /* Responsive */
+    @media (max-width: 900px) {
+      .fee-stats-grid  { grid-template-columns: repeat(3, 1fr); }
+      .fee-stats-row2  { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 560px) {
+      .fee-stats-grid  { grid-template-columns: repeat(2, 1fr); }
+      .fee-stats-row2  { grid-template-columns: 1fr; }
+      .fee-stat-number { font-size: 28px; }
+    }
+  </style>
+
+  <div class="fee-stats-inner">
+
+    <!-- Section heading -->
+    <div class="fee-stats-header">
+      <h2>Faculty of Electrical Engineering at a glance</h2>
+      <p>Shaping Pakistan's engineering future since 1993</p>
+    </div>
+
+    <!-- Top row: 5 big stat cards -->
+    <div class="fee-stats-grid">
+
+      <div class="fee-stat-card">
+        <span class="fee-stat-icon">&#128101;</span><!-- 👥 -->
+        <div class="fee-stat-number">
+          <span class="fee-counter" data-target="30">0</span>+
+        </div>
+        <div class="fee-stat-label">Faculty members</div>
+        <div class="fee-stat-sub">PhD qualified</div>
+      </div>
+
+      <div class="fee-stat-card">
+        <span class="fee-stat-icon">&#127979;</span><!-- 🎓 -->
+        <div class="fee-stat-number">
+          <span class="fee-counter" data-target="800">0</span>+
+        </div>
+        <div class="fee-stat-label">Students enrolled</div>
+        <div class="fee-stat-sub">UG &amp; PG combined</div>
+      </div>
+
+      <div class="fee-stat-card">
+        <span class="fee-stat-icon">&#128300;</span><!-- 🔬 -->
+        <div class="fee-stat-number">
+          <span class="fee-counter" data-target="12">0</span>+
+        </div>
+        <div class="fee-stat-label">Research labs</div>
+        <div class="fee-stat-sub">Specialized facilities</div>
+      </div>
+
+      <div class="fee-stat-card">
+        <span class="fee-stat-icon">&#128196;</span><!-- 📄 -->
+        <div class="fee-stat-number">
+          <span class="fee-counter" data-target="150">0</span>+
+        </div>
+        <div class="fee-stat-label">Publications / year</div>
+        <div class="fee-stat-sub">SCI / Scopus indexed</div>
+      </div>
+
+      <div class="fee-stat-card">
+        <span class="fee-stat-icon">&#127942;</span><!-- 🏆 -->
+        <div class="fee-stat-number">
+          <span class="fee-counter" data-target="30">0</span>+
+        </div>
+        <div class="fee-stat-label">Years of excellence</div>
+        <div class="fee-stat-sub">Est. 1993</div>
+      </div>
+
+    </div><!-- /.fee-stats-grid -->
+
+    <!-- Bottom row: 4 inline stats -->
+    <div class="fee-stats-row2">
+
+      <div class="fee-inline-stat">
+        <span class="fee-inline-icon">&#127941;</span><!-- 🏅 -->
+        <div>
+          <div class="fee-inline-number">
+            <span class="fee-counter" data-target="4">0</span> programs
+          </div>
+          <div class="fee-inline-label">PEC accredited degrees</div>
+        </div>
+      </div>
+
+      <div class="fee-inline-stat">
+        <span class="fee-inline-icon">&#128200;</span><!-- 📈 -->
+        <div>
+          <div class="fee-inline-number">
+            <span class="fee-counter" data-target="20">0</span>+ projects
+          </div>
+          <div class="fee-inline-label">Active funded research</div>
+        </div>
+      </div>
+
+      <div class="fee-inline-stat">
+        <span class="fee-inline-icon">&#127760;</span><!-- 🌐 -->
+        <div>
+          <div class="fee-inline-number">
+            <span class="fee-counter" data-target="15">0</span>+ partners
+          </div>
+          <div class="fee-inline-label">Industry collaborations</div>
+        </div>
+      </div>
+
+      <div class="fee-inline-stat">
+        <span class="fee-inline-icon">&#128187;</span><!-- 💻 -->
+        <div>
+          <div class="fee-inline-number">
+            <span class="fee-counter" data-target="5000">0</span>+
+          </div>
+          <div class="fee-inline-label">Alumni in industry</div>
+        </div>
+      </div>
+
+    </div><!-- /.fee-stats-row2 -->
+
+  </div><!-- /.fee-stats-inner -->
+
+</section><!-- /#fee-stats -->
+
+<!-- ── Counter animation script ──
+     Place this once anywhere before </body> if not already present.
+     Safe to call multiple times — uses a guard flag. -->
+<script>
+(function () {
+  if (window._feeCounterInit) return;
+  window._feeCounterInit = true;
+
+  function animateCounter(el, target, duration) {
+    var start = null;
+    function step(ts) {
+      if (!start) start = ts;
+      var progress = Math.min((ts - start) / duration, 1);
+      var eased    = 1 - Math.pow(1 - progress, 3);
+      el.textContent = Math.round(eased * target).toLocaleString();
+      if (progress < 1) requestAnimationFrame(step);
+      else el.textContent = target.toLocaleString();
+    }
+    requestAnimationFrame(step);
+  }
+
+  function runCounters() {
+    document.querySelectorAll('.fee-counter').forEach(function (el) {
+      if (el.dataset.done) return;
+      el.dataset.done = '1';
+      animateCounter(el, parseInt(el.dataset.target, 10), 1800);
+    });
+  }
+
+  /* IntersectionObserver: fire when section scrolls into view */
+  var section = document.getElementById('fee-stats');
+  if (section && 'IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entries, o) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { runCounters(); o.disconnect(); }
+      });
+    }, { threshold: 0.2 });
+    obs.observe(section);
+  } else {
+    /* Fallback: run immediately */
+    runCounters();
+  }
+}());
+</script>
+
+<!-- ============================================================
+     END FEE Stats Section
+     ============================================================ -->

@@ -824,6 +824,121 @@
 		}
 
 		/* Forminator Form Styles End*/
+		#fee-stats-wrapper {
+			background-color: #f9f9f9;
+			border-top: 1px solid #ebebeb;
+			border-bottom: 1px solid #ebebeb;
+		}
+
+		/* ── Top row: big stat cards ── */
+		#fee-stats-top-row .gdlr-core-pbf-column {
+			text-align: center;
+		}
+
+		.fee-stat-card {
+			padding: 28px 12px 22px;
+			background: #ffffff;
+			border: 1px solid #e8e8e8;
+			border-radius: 6px;
+			transition: border-color 0.25s ease, transform 0.25s ease;
+		}
+
+		.fee-stat-card:hover {
+			border-color: #19204c;
+			transform: translateY(-3px);
+		}
+
+		.fee-stat-icon {
+			font-size: 28px;
+			color: #c4a464;
+			/* Kingster gold — matches existing accent */
+			margin-bottom: 12px;
+			display: block;
+		}
+
+		.fee-stat-number {
+			font-size: 38px;
+			font-weight: 700;
+			color: #19204c;
+			/* Kingster navy */
+			line-height: 1;
+			margin-bottom: 6px;
+		}
+
+		.fee-stat-label {
+			font-size: 13px;
+			font-weight: 600;
+			color: #333333;
+			line-height: 1.4;
+		}
+
+		.fee-stat-sub {
+			font-size: 11px;
+			color: #888888;
+			margin-top: 4px;
+		}
+
+		/* ── Bottom row: inline stats ── */
+		#fee-stats-bottom-row .gdlr-core-pbf-column {
+			margin-top: 0;
+		}
+
+		.fee-inline-stat {
+			display: flex;
+			align-items: center;
+			gap: 14px;
+			background: #19204c;
+			/* Kingster navy fill */
+			border-radius: 6px;
+			padding: 18px 20px;
+		}
+
+		.fee-inline-icon {
+			font-size: 22px;
+			color: #c4a464;
+			/* gold icon on navy */
+			flex-shrink: 0;
+		}
+
+		.fee-inline-text {
+			flex: 1;
+		}
+
+		.fee-inline-number {
+			font-size: 19px;
+			font-weight: 700;
+			color: #ffffff;
+			line-height: 1;
+		}
+
+		.fee-inline-label {
+			font-size: 11px;
+			color: #c4a464;
+			margin-top: 4px;
+			font-weight: 500;
+		}
+
+		/* ── Responsive ── */
+		@media only screen and (max-width: 767px) {
+
+			#fee-stats-top-row .gdlr-core-pbf-column,
+			#fee-stats-bottom-row .gdlr-core-pbf-column {
+				width: 50%;
+				margin-bottom: 16px;
+			}
+
+			.fee-stat-number {
+				font-size: 28px;
+			}
+		}
+
+		@media only screen and (max-width: 419px) {
+
+			#fee-stats-top-row .gdlr-core-pbf-column,
+			#fee-stats-bottom-row .gdlr-core-pbf-column {
+				width: 100%;
+			}
+		}
 	</style>
 	<script src="./scripts/wp-emoji-release.min.js" defer></script>
 </head>
@@ -1271,8 +1386,7 @@
 				<div class="kingster-breadcrumbs-container kingster-container">
 					<div class="kingster-breadcrumbs-item kingster-item-pdlr"><!-- Breadcrumb NavXT 7.4.1 -->
 						<span property="itemListElement" typeof="ListItem"><a property="item" typeof="WebPage"
-								title="Go to Home." href="/" class="home"><span
-									property="name">Home</span></a>
+								title="Go to Home." href="/" class="home"><span property="name">Home</span></a>
 							<meta property="position" content="1">
 						</span> &gt; <span class="post post-page current-item">Faculty Of Electrical Engineering</span>
 					</div>
@@ -1316,15 +1430,222 @@
 											</div>
 										</div>
 									</div>
-									<div class="gdlr-core-pbf-element">
-										<div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"
-											id="gdlr-core-title-item-id-87260">
-											<div class="gdlr-core-title-item-title-wrap clearfix">
-												<h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
-													style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #c4a464 ;">
-													<a href="./pages/rd-fee.html" target="_self">OUTCOME BASED EDUCATION
-														(OBE)</a>
-												</h3>
+									<div class="gdlr-core-pbf-wrapper" id="fee-stats-wrapper" style="padding: 20px 5px 20px 5px;margin-bottom: 20px;">
+										<div class="gdlr-core-pbf-background-wrap"></div>
+										<div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
+											<div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
+
+												<!-- ── Section heading (matches OBE / Research heading style) ── -->
+												<div class="gdlr-core-pbf-element">
+													<div class="gdlr-core-title-item clearfix gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr">
+														<div class="gdlr-core-title-item-title-wrap clearfix">
+															<h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
+																style="font-size:26px; font-weight:600; letter-spacing:0px; text-transform:none; color:#c4a464;">
+																Faculty of Electrical Engineering &mdash; At a Glance
+															</h3>
+														</div>
+														<span
+															class="gdlr-core-title-item-caption gdlr-core-info-font gdlr-core-skin-caption"
+															style="font-size:15px; color:#888;">
+															Shaping Pakistan&rsquo;s engineering future since 1993
+														</span>
+													</div>
+												</div>
+												<div class="gdlr-core-pbf-element">
+													<div class="gdlr-core-column-service-item gdlr-core-item-pdlr .gdlr-core-tab-style1-horizontal clearfix" id="fee-stats-top-row">
+
+														<!-- Card 1 : Faculty -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-12 gdlr-core-column-first">
+															<div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-stat-card gdlr-core-item-pdlr">
+																	<div class="fee-stat-icon gdlr-core-skin-icon">
+																		<i class="fa fa-users"></i>
+																	</div>
+																	<div class="fee-stat-number gdlr-core-skin-title">
+																		<span class="fee-counter"
+																			data-target="30">0</span>+
+																	</div>
+																	<div class="fee-stat-label gdlr-core-skin-content">
+																		Faculty members</div>
+																	<div class="fee-stat-sub gdlr-core-skin-caption">PhD
+																		qualified</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Card 2 : Students -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-12">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-stat-card gdlr-core-item-pdlr">
+																	<div class="fee-stat-icon gdlr-core-skin-icon">
+																		<i class="fa fa-graduation-cap"></i>
+																	</div>
+																	<div class="fee-stat-number gdlr-core-skin-title">
+																		<span class="fee-counter"
+																			data-target="800">0</span>+
+																	</div>
+																	<div class="fee-stat-label gdlr-core-skin-content">
+																		Students enrolled</div>
+																	<div class="fee-stat-sub gdlr-core-skin-caption">UG
+																		&amp; PG combined</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Card 3 : Labs -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-12">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-stat-card gdlr-core-item-pdlr">
+																	<div class="fee-stat-icon gdlr-core-skin-icon">
+																		<i class="fa fa-flask"></i>
+																	</div>
+																	<div class="fee-stat-number gdlr-core-skin-title">
+																		<span class="fee-counter"
+																			data-target="12">0</span>+
+																	</div>
+																	<div class="fee-stat-label gdlr-core-skin-content">
+																		Research labs</div>
+																	<div class="fee-stat-sub gdlr-core-skin-caption">
+																		Specialized facilities</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Card 4 : Publications -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-12">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-stat-card gdlr-core-item-pdlr">
+																	<div class="fee-stat-icon gdlr-core-skin-icon">
+																		<i class="fa fa-file-text-o"></i>
+																	</div>
+																	<div class="fee-stat-number gdlr-core-skin-title">
+																		<span class="fee-counter"
+																			data-target="150">0</span>+
+																	</div>
+																	<div class="fee-stat-label gdlr-core-skin-content">
+																		Publications / year</div>
+																	<div class="fee-stat-sub gdlr-core-skin-caption">SCI
+																		/ Scopus indexed</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Card 5 : Years -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-12">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-stat-card gdlr-core-item-pdlr">
+																	<div class="fee-stat-icon gdlr-core-skin-icon">
+																		<i class="fa fa-trophy"></i>
+																	</div>
+																	<div class="fee-stat-number gdlr-core-skin-title">
+																		<span class="fee-counter"
+																			data-target="30">0</span>+
+																	</div>
+																	<div class="fee-stat-label gdlr-core-skin-content">
+																		Years of excellence</div>
+																	<div class="fee-stat-sub gdlr-core-skin-caption">
+																		Est. 1993</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+												<div class="gdlr-core-pbf-element" style="margin-top:20px;">
+													<div class="gdlr-core-column-service-item gdlr-core-item-pdlr .gdlr-core-price-table clearfix" id="fee-stats-bottom-row">
+
+														<!-- Inline 1 -->
+														<div
+															class="gdlr-core-pbf-column gdlr-core-column-15 gdlr-core-column-first">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-inline-stat gdlr-core-item-pdlr">
+																	<i
+																		class="fa fa-certificate fee-inline-icon gdlr-core-skin-icon"></i>
+																	<div class="fee-inline-text">
+																		<div
+																			class="fee-inline-number gdlr-core-skin-title">
+																			<span class="fee-counter"
+																				data-target="4">0</span> programs
+																		</div>
+																		<div
+																			class="fee-inline-label gdlr-core-skin-caption">
+																			PEC accredited degrees</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Inline 2 -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-15">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-inline-stat gdlr-core-item-pdlr">
+																	<i
+																		class="fa fa-line-chart fee-inline-icon gdlr-core-skin-icon"></i>
+																	<div class="fee-inline-text">
+																		<div
+																			class="fee-inline-number gdlr-core-skin-title">
+																			<span class="fee-counter"
+																				data-target="20">0</span>+ projects
+																		</div>
+																		<div
+																			class="fee-inline-label gdlr-core-skin-caption">
+																			Active funded research</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Inline 3 -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-15">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-inline-stat gdlr-core-item-pdlr">
+																	<i
+																		class="fa fa-globe fee-inline-icon gdlr-core-skin-icon"></i>
+																	<div class="fee-inline-text">
+																		<div
+																			class="fee-inline-number gdlr-core-skin-title">
+																			<span class="fee-counter"
+																				data-target="15">0</span>+ partners
+																		</div>
+																		<div
+																			class="fee-inline-label gdlr-core-skin-caption">
+																			Industry collaborations</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<!-- Inline 4 -->
+														<div class="gdlr-core-pbf-column gdlr-core-column-15">
+															<div
+																class="gdlr-core-pbf-column-content-margin gdlr-core-js">
+																<div class="fee-inline-stat gdlr-core-item-pdlr">
+																	<i
+																		class="fa fa-laptop fee-inline-icon gdlr-core-skin-icon"></i>
+																	<div class="fee-inline-text">
+																		<div
+																			class="fee-inline-number gdlr-core-skin-title">
+																			<span class="fee-counter"
+																				data-target="5000">0</span>+
+																		</div>
+																		<div
+																			class="fee-inline-label gdlr-core-skin-caption">
+																			Alumni in industry</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+
 											</div>
 										</div>
 									</div>
@@ -1332,11 +1653,25 @@
 										<div
 											class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
 											<div class="gdlr-core-text-box-item-content" style="text-transform: none ;">
-												<p><b>Faculty Mission</b></p>
+												<h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
+													style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #c4a464 ;">
+													Faculty Mission
+												</h3>
 												<p style="text-align: justify;">The Faculty of Electrical Engineering is
 													to produce graduates equipped with broad and in-depth knowledge and
 													relevant skills to present effective socio-economical solutions for
 													complex problems.</p>
+											</div>
+										</div>
+									</div>
+									<div class="gdlr-core-pbf-element">
+										<div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"
+											id="gdlr-core-title-item-id-87260">
+											<div class="gdlr-core-title-item-title-wrap clearfix">
+												<h3 class="gdlr-core-title-item-title gdlr-core-skin-title"
+													style="font-size: 22px ;font-weight: 600 ;letter-spacing: 0px ;text-transform: none ;color: #c4a464 ;">
+													OUTCOME BASED EDUCATION (OBE)
+												</h3>
 												<p><b>Program Educational Objectives (PEOs):</b></p>
 												<p>The three PEOs of FEE are stated as follows:</p>
 												<table>
@@ -1443,8 +1778,10 @@
 												<p style="text-align: justify;">
 												</p>
 											</div>
+
 										</div>
 									</div>
+									
 									<div class="gdlr-core-pbf-element">
 										<div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-left-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"
 											id="gdlr-core-title-item-id-58280">
@@ -1725,12 +2062,92 @@
 		var cfflinkhashtags = "true";
 	</script>
 
-	<script>(function (d, s, id) {
+	<script>
+		(function () {
+			if (window._feeStatsInit) return;
+			window._feeStatsInit = true;
+
+			/**
+			 * Animate a single counter element from 0 to its data-target.
+			 * @param {HTMLElement} el      - the <span class="fee-counter"> element
+			 * @param {number}      target  - final number
+			 * @param {number}      duration - ms (default 1800)
+			 */
+			function animateCounter(el, target, duration) {
+				var start = null;
+				duration = duration || 1800;
+
+				function step(timestamp) {
+					if (!start) start = timestamp;
+					var progress = Math.min((timestamp - start) / duration, 1);
+					/* Ease-out cubic */
+					var eased = 1 - Math.pow(1 - progress, 3);
+					el.textContent = Math.round(eased * target).toLocaleString();
+					if (progress < 1) {
+						requestAnimationFrame(step);
+					} else {
+						el.textContent = target.toLocaleString();
+					}
+				}
+
+				requestAnimationFrame(step);
+			}
+
+			/** Kick off all counters inside the stats wrapper */
+			function runAllCounters() {
+				var counters = document.querySelectorAll('#fee-stats-wrapper .fee-counter');
+				counters.forEach(function (el) {
+					if (el.dataset.done) return;   /* skip if already animated */
+					el.dataset.done = '1';
+					var target = parseInt(el.dataset.target, 10) || 0;
+					animateCounter(el, target, 1800);
+				});
+			}
+
+			/**
+			 * Use IntersectionObserver so counters only start
+			 * when the section scrolls into view — same pattern
+			 * Kingster uses for its own scroll animations.
+			 */
+			function init() {
+				var wrapper = document.getElementById('fee-stats-wrapper');
+				if (!wrapper) return;
+
+				if ('IntersectionObserver' in window) {
+					var observer = new IntersectionObserver(function (entries, obs) {
+						entries.forEach(function (entry) {
+							if (entry.isIntersecting) {
+								runAllCounters();
+								obs.disconnect();
+							}
+						});
+					}, { threshold: 0.2 });
+
+					observer.observe(wrapper);
+				} else {
+					/* Fallback for older browsers */
+					runAllCounters();
+				}
+			}
+
+			/* Wait for DOM ready */
+			if (document.readyState === 'loading') {
+				document.addEventListener('DOMContentLoaded', init);
+			} else {
+				init();
+			}
+
+		}());
+
+
+		(function (d, s, id) {
 			var js, fjs = d.getElementsByTagName(s)[0];
 			js = d.createElement(s); js.id = id;
 			js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1'
 			fjs.parentNode.insertBefore(js, fjs);
-		}(document, 'script', 'facebook-jssdk'));</script>
+		}
+			(document, 'script', 'facebook-jssdk'));
+	</script>
 	<div class="fb-customerchat" attribution="wordpress" attribution_version="2.3" page_id="23679743772"></div>
 
 	<style>
